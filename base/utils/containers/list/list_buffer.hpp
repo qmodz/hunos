@@ -4,4 +4,7 @@
 #include "singly_linked/singly_linked_list_buffer.hpp"
 #include "singly_linked/singly_linked_list_elem.hpp"
 
+#include "doubly_linked/doubly_linked_list_buffer.hpp"
+#include "doubly_linked/doubly_linked_list_elem.hpp"
+
 #endif
