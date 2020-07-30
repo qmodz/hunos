@@ -3,6 +3,7 @@
 #include "memcmp_base.hpp"
 #include "memcpy_base.hpp"
 #include "memmove_base.hpp"
+#include "memset_base.hpp"
 
 namespace hunos {
 namespace utils {
@@ -22,6 +23,10 @@ void* __attribute__((weak)) memcpy(void* destination, const void* source, size_t
 
 void* __attribute__((weak)) memmove(void* destination, const void* source, size_t num){
 	return base::utils::memory::memmove(destination, source, num);
+}
+
+void* __attribute__((weak)) memset(void* ptr, int value, size_t num){
+	return base::utils::memory::memset(ptr, value, num);
 }
 
 }  // namespace memory
