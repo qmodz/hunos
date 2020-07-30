@@ -1,19 +1,18 @@
-#ifndef _UTILS_MEMORY_HPP
-#define _UTILS_MEMORY_HPP
+#ifndef _MEMMOVE_BASE_HPP
+#define _MEMMOVE_BASE_HPP
 
 #include "system/typedefs.hpp"
 
 namespace hunos {
+namespace base {
 namespace utils {
 inline namespace memory {
 
-void* memchr(const void* ptr, int value, size_t num);
-int memcmp(const void* ptr1, const void* ptr2, size_t num);
-void* memcpy(void* destination, const void* source, size_t num);
 void* memmove(void* destination, const void* source, size_t num);
 
 }  // namespace memory
 }  // namespace utils
+}  // namespace base
 }  // namespace hunos
 
 #endif
