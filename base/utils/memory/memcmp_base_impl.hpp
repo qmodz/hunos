@@ -8,24 +8,6 @@ inline namespace memory {
 template <typename T>
 static int alignMemcmp(const uint8_t** ptr1, const uint8_t** ptr2, size_t* num);
 
-template <uint8_t>
-int alignedMemcmp(const uint8_t* ptr1, const uint8_t* ptr2, size_t num){
-	while (num != 0 && *ptr1 == *ptr2){
-		++ptr1;
-		++ptr2;
-
-		--num;
-	}
-
-	if (num == 0){
-		return 0;
-	} else if (*ptr1 < *ptr2) {
-		return -1;
-	} else {
-		return 1;
-	}
-}
-
 template <typename T>
 int alignedMemcmp(const T* ptr1, const T* ptr2, size_t num){
 	while (num >= sizeof(T) && *ptr1 == *ptr2){
