@@ -4,6 +4,7 @@ namespace hunos {
 namespace base {
 namespace utils {
 inline namespace memory {
+inline namespace operations {
 
 void* memchr(const void* ptr, int value, size_t num){
 	const char* char_ptr = (const char *) ptr;
@@ -20,6 +21,7 @@ void* memchr(const void* ptr, int value, size_t num){
 	return nullptr;
 }
 
+}  // namespace operations
 }  // namespace memory
 }  // namespace utils
 }  // namespace base

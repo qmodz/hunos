@@ -7,9 +7,11 @@ namespace hunos {
 namespace base {
 namespace utils {
 inline namespace memory {
+inline namespace operations {
 
 void* memchr(const void* ptr, int value, size_t num);
 
+}  // namespace operations
 }  // namespace memory
 }  // namespace utils
 }  // namespace base

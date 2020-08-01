@@ -7,9 +7,11 @@ namespace hunos {
 namespace base {
 namespace utils {
 inline namespace memory {
+inline namespace operations {
 
 void* memmove(void* destination, const void* source, size_t num);
 
+}  // namespace operations
 }  // namespace memory
 }  // namespace utils
 }  // namespace base
