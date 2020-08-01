@@ -70,12 +70,12 @@ inline uint8_t countTrailingOnes(const register T value){
 }
 
 template <typename T>
-inline uint8_t mostSignificantBit(const register T value){
+inline uint8_t mostSignificantSetBit(const register T value){
 	return BIT_SIZEOF(T) - countLeadingZeros(value) - 1;
 }
 
 template <typename T>
-inline uint8_t leastSignificantBit(const register T value){
+inline uint8_t leastSignificantSetBit(const register T value){
 	return countTrailingZeros(value);
 }
 
