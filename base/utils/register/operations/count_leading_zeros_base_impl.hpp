@@ -4,6 +4,7 @@ namespace hunos {
 namespace base {
 namespace utils {
 inline namespace reg {
+inline namespace operations {
 
 template <typename T>
 uint8_t countLeadingZeros(T value){
@@ -19,6 +20,7 @@ uint8_t countLeadingZeros(T value){
 	return zeros;
 }
 
+}  // namespace operations
 }  // namespace reg
 }  // namespace utils
 }  // namespace base
