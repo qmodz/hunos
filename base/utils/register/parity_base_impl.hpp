@@ -10,7 +10,7 @@ template <typename T>
 bool parity(T value){
 	uint8_t ones = countOnes<T>(value);
 
-	return (bool) (ones % 2);
+	return (bool) (ones & 1);
 }
 
 }  // namespace reg
