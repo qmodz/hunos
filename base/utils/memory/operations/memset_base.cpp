@@ -4,6 +4,7 @@ namespace hunos {
 namespace base {
 namespace utils {
 inline namespace memory {
+inline namespace operations {
 
 template <>
 void alignedMemset<uint8_t>(uint8_t* ptr, uint8_t value, size_t num){
@@ -24,6 +25,7 @@ void* memset(void* ptr, int value, size_t num){
 	return ptr;
 }
 
+}  // namespace operations
 }  // namespace memory
 }  // namespace utils
 }  // namespace base

@@ -4,6 +4,7 @@ namespace hunos {
 namespace base {
 namespace utils {
 inline namespace memory {
+inline namespace operations {
 
 template <typename T>
 void alignedMemset(T* ptr, T value, size_t num){
@@ -34,6 +35,7 @@ void unalignedMemset(uint8_t* ptr, T value, size_t num){
 	alignedMemset<T>((T *) ptr, value, num);
 }
 
+}  // namespace operations
 }  // namespace memory
 }  // namespace utils
 }  // namespace base
