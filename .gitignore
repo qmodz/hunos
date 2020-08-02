@@ -2,5 +2,5 @@
 *.d
 *.bin
 *.elf
-output
-output/*
+./output
+./output/*
