@@ -4,6 +4,7 @@ namespace hunos {
 namespace base {
 namespace utils {
 inline namespace memory {
+inline namespace operations {
 
 template <>
 void alignedForwardMemcpy<uint8_t>(uint8_t* destination, const uint8_t* source, size_t num){
@@ -60,6 +61,7 @@ void* backwardMemcpy(void* destination, const void* source, size_t num){
 	return destination;
 }
 
+}  // namespace operations
 }  // namespace memory
 }  // namespace utils
 }  // namespace base

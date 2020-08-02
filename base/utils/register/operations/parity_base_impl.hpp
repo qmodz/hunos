@@ -5,6 +5,7 @@ namespace hunos {
 namespace base {
 namespace utils {
 inline namespace reg {
+inline namespace operations {
 
 template <typename T>
 bool parity(T value){
@@ -13,6 +14,7 @@ bool parity(T value){
 	return (bool) (ones & 1);
 }
 
+}  // namespace operations
 }  // namespace reg
 }  // namespace utils
 }  // namespace base

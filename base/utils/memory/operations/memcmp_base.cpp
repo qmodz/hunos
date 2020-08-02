@@ -4,6 +4,7 @@ namespace hunos {
 namespace base {
 namespace utils {
 inline namespace memory {
+inline namespace operations {
 
 template <>
 int alignedMemcmp<uint8_t>(const uint8_t* ptr1, const uint8_t* ptr2, size_t num){
@@ -36,6 +37,7 @@ int memcmp(const void* ptr1, const void* ptr2, size_t num){
 	}
 }
 
+}  // namespace operations
 }  // namespace memory
 }  // namespace utils
 }  // namespace base

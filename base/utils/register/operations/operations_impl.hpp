@@ -1,8 +1,9 @@
-#include "register.hpp"
+#include "operations.hpp"
 
 namespace hunos {
 namespace utils {
 inline namespace reg {
+inline namespace operations {
 
 template <typename T>
 inline T clearBit(const register T value, const register uint8_t bit){
@@ -126,6 +127,7 @@ inline bool parity<uint64_t>(const register uint64_t value){
 	return __builtin_parityl(value);
 }
 
+}  // namespace operations
 }  // namespace reg
 }  // namespace utils
 }  // namespace hunos

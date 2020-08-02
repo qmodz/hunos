@@ -4,6 +4,7 @@ namespace hunos {
 namespace base {
 namespace utils {
 inline namespace reg {
+inline namespace operations {
 
 template <typename T>
 uint8_t countOnes(T value){
@@ -20,6 +21,7 @@ uint8_t countOnes(T value){
 	return ones;
 }
 
+}  // namespace operations
 }  // namespace reg
 }  // namespace utils
 }  // namespace base
